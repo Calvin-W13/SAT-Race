@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <div id="title"><h1>Math Race!</h1></div>
+</head>
+<body>
+    <!--CONTAINER FOR MATH GAME-->
+    <div id="containerMath">
+        <div id="startMath" onclick="startQuizMath()">Start SAT Math Quiz!</div>
+        <div id="quizMath" style="display: none">
+            <div id="questionMath"></div>
+            <div id="qImgMath"></div>
+            <div id="choicesMath">
+                <div class="choice" id="AMath" onclick="checkAnswerMath('A')"></div>
+                <div class="choice" id="BMath" onclick="checkAnswerMath('B')"></div>
+                <div class="choice" id="CMath" onclick="checkAnswerMath('C')"></div>
+                <div class="choice" id="DMath" onclick="checkAnswerMath('D')"></div>
+            </div>
+            <div id="timerMath">
+                <div id="counterMath"></div>
+                <div id="btimeGaugeMath"></div>
+                <div id="timeGaugeMath"></div>
+            </div>
+            <div id="progressMath"></div>
+        </div>
+        <div id="scoreContainerMath" style="display: none"></div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

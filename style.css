@@ -1,0 +1,481 @@
+head{
+    font: size 80px;
+    font-family:monospace;
+}
+body{
+    font-size: 20px;
+    font-family: monospace;
+    background-color: #222;
+    animation-name: color;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+@keyframes color {
+    0% {
+      background-color: #192734;
+    }
+    50% {
+      background-color: #7f7f7f;
+    }
+    100% {
+      background-color: #192734;
+    }
+  }
+#title{
+    background-color:white;
+    height: 100px;
+    text-align:center;
+    box-shadow: 0px 5px 10px 0px;
+    left:200px;
+    font-size:45px;
+}
+#containerAbout{
+    left:670px;
+    top:10px;
+    margin : 20px auto;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width : 200px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+    text-align: center;
+    color:coral;
+}
+#containerFeedback{
+    left:1000px;
+    top:-13px;
+    margin : 20px auto;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width : 200px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+    text-align: center;
+    color:coral;
+}
+.hrefTitleGrammar{
+    font-size: 1.5em;
+    font-weight: bolder;
+    word-break: break-all;
+    width:265px;
+    height:150px;
+    border : 2px solid #4db1c8;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    left:250px;
+    top:50px;
+    color : coral;
+    
+}
+.hrefTitleGrammar:hover{
+    border: 4px solid lightseagreen;
+    color : lightseagreen;
+    
+}
+
+.hrefTitleMath{
+    font-size: 1.5em;
+    font-weight: bolder;
+    word-break: break-all;
+    width:240px;
+    height:150px;
+    border : 2px solid #4db1c8;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    left:265px;
+    top:50px;
+    color : coral;
+}
+.hrefTitleMath:hover{
+    border: 4px solid lightseagreen;
+    color : lightseagreen;
+    
+}
+#containerInfo{
+    margin : 20px auto;
+    background-color: white;
+    height: 65px;
+    width : 700px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+}
+.infoGeneral{
+    left:0px;
+    position:relative;
+    text-align: center;
+}
+#containerAbt{
+    margin : 20px auto;
+    background-color: grey;
+    height: 300px;
+    top:50px;
+    left:15px;
+    width : 700px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+    color:coral;
+}
+#abtText{
+    font-size:22px;
+}
+#containerMath{
+    margin : 20px auto;
+    background-color: white;
+    height: 400px;
+    width : 800px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+}
+#startMath{
+    font-size: 1.5em;
+    font-weight: bolder;
+    word-break: break-all;
+    width:250px;
+    height:150px;
+    border : 2px solid lightgrey;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    left:262px;
+    top:80px;
+    color : lightgrey;
+}
+#startMath:hover{
+    border: 3px solid lightseagreen;
+    color : lightseagreen;
+}
+
+#qImgMath{
+    width : 200px;
+    height : 200px;
+    position: absolute;
+    left : 0px;
+    top : 0px;
+}
+#qImgMath img{
+    width : 200px;
+    height : 200px;
+    border-top-left-radius: 5px;
+}
+
+#questionMath{
+    width:500px;
+    height : 125px;
+    position: absolute;
+    right:0;
+    top:0;
+}
+#questionMath p{
+    margin : 0;
+    padding : 15px;
+    font-size: 1.25em;
+}
+
+#choicesMath{
+    width : 480px;
+    position: absolute;
+    right : 0;
+    top : 190px;
+    padding : 10px
+}
+.choice{
+    display: inline-block;
+    width : 135px;
+    text-align: center;
+    border : 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    padding : 5px;
+}
+.choice:hover{
+    border : 2px solid grey;
+    font-weight: bold;
+}
+
+#timerMath{
+    position: absolute;
+    height : 100px;
+    width : 200px;
+    bottom : 0px;
+    text-align: center;
+}
+#counterMath{
+    font-size: 3em;
+}
+#btimeGaugeMath{
+    width : 150px;
+    height : 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin-left : 25px;
+}
+#timeGaugeMath{
+    height : 10px;
+    border-radius: 10px;
+    background-color: mediumseagreen;
+    margin-top : -10px;
+    margin-left : 25px;
+}
+#progressMath{
+    width : 500px;
+    position: absolute;
+    bottom : 0px;
+    right : 0px;
+    padding:5px;
+    text-align: right;
+}
+.prog{
+    width : 25px;
+    height : 25px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left : 5px;
+    margin-right : 5px;
+}
+#scoreContainerMath{
+    margin : 20px auto;
+    background-color: white;
+    opacity: 0.8;
+    height: 400px;
+    width : 800px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+    display: none;
+}
+#scoreContainerMath img{
+    position: absolute;
+    top:140px;
+    left:350px;
+}
+#scoreContainerMath p{
+    position: absolute;
+    display: block;
+    width : 59px;
+    height :59px;
+    top:170px;
+    left:350px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#restartButtonMath{
+    display: inline-block;
+    width : 135px;
+    text-align: center;
+    border : 3px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    padding : 5px;
+    left: 650px;
+    position:relative;
+}
+
+#restartButtonMath:hover{
+    border: 4px solid lightseagreen;
+    color : lightseagreen;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Grammar CSS*/
+
+
+
+#container{
+    margin : 20px auto;
+    background-color: white;
+    height: 500px;
+    width : 1000px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+}
+#start{
+    font-size: 1.5em;
+    font-weight: bolder;
+    word-break: break-all;
+    width:300px;
+    height:150px;
+    border : 2px solid lightgrey;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    left:350px;
+    top:150px;
+    color : lightgrey;
+}
+#start:hover{
+    border: 3px solid lightseagreen;
+    color : lightseagreen;
+}
+
+
+#qImg{
+    width : 0px;
+    height : 0px;
+    position: absolute;
+    left : 0px;
+    top : 0px;
+}
+#qImg img{
+    width : 0px;
+    height : 0px;
+    border-top-left-radius: 5px;
+}
+
+
+#question{
+    width:500px;
+    height : 125px;
+    position: absolute;
+    right:0;
+    top:0;
+}
+#question p{
+    margin : 0;
+    padding : 15px;
+    font-size: 1.25em;
+}
+
+
+#choices{
+    width : 480px;
+    position: absolute;
+    
+    padding : 10px
+}
+.choice{
+    display: inline-block;
+    width : 135px;
+    text-align: center;
+    border : 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    padding : 5px;
+}
+.choice:hover{
+    border : 2px solid grey;
+    font-weight: bold;
+}
+
+
+#timer{
+    position: absolute;
+    height : 100px;
+    width : 200px;
+    bottom : 0px;
+    text-align: center;
+}
+#counter{
+    font-size: 3em;
+}
+#btimeGauge{
+    width : 150px;
+    height : 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin-left : 25px;
+}
+#timeGauge{
+    height : 10px;
+    border-radius: 10px;
+    background-color: mediumseagreen;
+    margin-top : -10px;
+    margin-left : 25px;
+}
+#progress{
+    width : 500px;
+    position: absolute;
+    bottom : 0px;
+    right : 0px;
+    padding:5px;
+    text-align: right;
+}
+.prog{
+    width : 15px;
+    height : 15px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left : 5px;
+    margin-right : 5px;
+}
+#scoreContainer{
+    margin : 20px auto;
+    background-color: white;
+    opacity: 0.8;
+    height: 500px;
+    width : 1000px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+    display: none;
+}
+#scoreContainer img{
+    position: absolute;
+    top:200px;
+    left:499px;
+}
+#scoreContainer p{
+    position: absolute;
+    display: block;
+    width : 59px;
+    height :59px;
+    top:230px;
+    left:500px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+#restartButton{
+    display: inline-block;
+    width : 135px;
+    text-align: center;
+    border : 3px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    padding : 5px;
+    left:849px;
+    position:relative;
+}
+
+#restartButton:hover{
+    border: 4px solid lightseagreen;
+    color : lightseagreen;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
